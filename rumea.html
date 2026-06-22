@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <!--リセットCSS-->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="css/top.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/results.css">
+    <script src="script.js" defer></script>
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inder&family=Onest:wght@100..900&family=Rammetto+One&family=Shippori+Mincho&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="results">
+    <header>
+        <div class="results-inner">
+            <h1>Yumeka<br>Web Designer</h1>
+            <ul>
+                <li><a href="index.html#results-link">制作実績</a></li>
+                <li><a href="index.html#profile-link">私について</a></li>
+                <li><a href="index.html#skill-link">スキル＆ツール</a></li>
+            </ul>
+        <!--ハンバーガー-->
+        <div class="hamburger hamburger-results">
+            <div class="inner-sp" id="innerSp">
+                <h1 class="name-ttl-sp">Yumeka<br>Web Designer</h1>
+                <ul class="pc-menu sp-menu">
+                    <li><a href="index.html#results-link">制作実績<span class="btn">
+                                <img class="aslope-btn" src="picture/aslope-btn.png"><img class="check"
+                                    src="picture/check-btn.png" alt="check"></span></a></li>
+                    <li><a href="index.html#profile-link">私について<span class="btn">
+                                <img class="aslope-btn" src="picture/aslope-btn.png"><img class="check"
+                                    src="picture/check-btn.png" alt="check"></span></a></li>
+                    <li><a href="index.html#skill-link">スキル＆ツール<span class="btn">
+                                <img class="aslope-btn" src="picture/aslope-btn.png"><img class="check"
+                                    src="picture/check-btn.png" alt="check"></span></a></li>
+                </ul>
+            </div>
+            <div class="hamburger-logo" id="hamburgerLogo">
+                <img class="open" src="picture/hamburger.png" alt="開く">
+                <img class="close" src="picture/close.png" alt="閉じる">
+                <p>Menu</p>
+            </div>
+        </div>
+        <div class="overlay" id="overlay"></div>
+        </div>
+    </header>
+
+    <article class="results-box">
+        <div class="results-ttl">
+            <h2>制作実績</h2>
+        </div>
+        <section class="results-content">
+            <h3>スキンケアLP</h3>
+            <table>
+                <tr>
+                    <th>クライアント(仮想)</th>
+                    <td>Luméa（ルメア）</td>
+                </tr>
+                <tr>
+                    <th>制作日</th>
+                    <td>2026年3月 制作</td>
+                </tr>
+                <tr>
+                    <th>使用ツール</th>
+                    <td>Figma / Chat GPT/Image FX/Gemini</td>
+                </tr>
+                <tr>
+                    <th>制作目的</th>
+                    <td>20代後半〜30代女性をターゲットとした、オーガニック系スキンケアブランドのLPです。<br>明朝体の上品さと、丸みのあるゴシック体のやわらかさを組み合わせることで、ナチュラルで信頼感のある世界観を構築しました。
+                    <br>さらに、売上No.1のロゴはオリジナルで制作し、ブランドイメージに調和するよう細部まで調整しています。
+                    </td>
+                </tr>
+            </table>
+            <div class="img-tab">
+                <button class="tab-btn active tab-btn-rumea" data-target="pc">
+                    PC版
+                </button>
+                <button class="tab-btn rumea-active" data-target="sp">
+                    SP版
+                </button>
+            </div>
+            <div class="results-img rumea-img">
+                <div class="results-sp active-view">
+                    <img class="zoom-img" src="picture/rumea-img/ワイヤーフレーム_r1_c1.png">
+                    <img class="zoom-img" src="picture/rumea-img/ワイヤーフレーム_r2_c1.png">
+                </div>
+            </div>
+            <!--モーダル-->
+            <div class="img-modal">
+                <img src="" alt="">
+            </div>
+        </section>
+    </article>
+
+    <div class="results-other">
+        <div class="otherskill-ttl">
+            <h2>Other</h2>
+        </div>
+        <div class="other-list">
+            <a href="architecture.html" class="other-card">
+                <img src="picture/architecture-fv-pc.png" alt="工務店">
+                <div class="arrow">
+                    <p>工務店のコーポ<br class="arrow-sp">レートサイト</p>
+                    <button class="arrow">→</button>
+                </div>
+            </a>
+            <a href="results.html" class="other-card">
+                <img src="picture/business-fv-pc.png" alt="事業">
+                <div class="arrow">
+                    <p>物流会社のコーポ<br class="arrow-sp">レートサイト</p>
+                    <button class="arrow">→</button>
+                </div>
+            </a>
+            <a href="study.html" class="other-card">
+                <img src="picture/study-fv-pc.png" alt="学習">
+                <div class="arrow">
+                    <p>オンライン<br class="arrow-sp">学習・教育LP</p>
+                    <button class="arrow">→</button>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <footer class="results-footer">
+        <p>&copy;2026 Yumeka</p>
+    </footer>
+</body>
