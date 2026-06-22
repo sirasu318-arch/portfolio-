@@ -64,6 +64,9 @@
 .overlay{
     display: none;
 }
+.center-ttl{
+    opacity: 0;
+}
 .wave-top{
     margin-top: -8.7rem;
     width: 100%;
@@ -536,6 +539,15 @@ footer{
             opacity: 1;
             visibility: visible;
         }
+    }
+    .center-ttl{
+        font-size: clamp(24px, 5.333vw, 40px);
+        font-family: "Rammetto One", sans-serif;
+        color: style.$cream-color;
+        opacity: 1;
+        display: flex;
+        justify-content: center;
+        margin-top: 24px;
     }
     .wave-top{
         margin-top: -5rem;
