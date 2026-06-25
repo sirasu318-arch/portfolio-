@@ -99,6 +99,8 @@ body {
   font-family: "Inder", sans-serif;
   font-size: clamp(14px, 1.39vw, 20px);
   padding: 24px 0 8px 0;
+  line-height: 1.6;
+  letter-spacing: 0.05em;
 }
 .results-box .results-content .img-tab {
   opacity: 0;

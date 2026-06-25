@@ -148,12 +148,16 @@ article{
                 font-family: style.$main-font;
                 font-size: 16px;
                 color: style.$txt-color;
-                line-height: 164%;
+                line-height: 1.6;
+                letter-spacing: 0.05em;
                 padding: 6px 0 72px 4px;
             }
         }
     }
     }
+}
+h6 {
+    opacity: 0;
 }
 .wave-center{
     width: 100%;
@@ -179,7 +183,7 @@ article{
             img{
                 display: block;
                 margin-inline: auto;
-                margin-top: -32px;
+                margin-top: -56px;
             }
             h3{
                 font-family: style.$main-font;
@@ -195,6 +199,7 @@ article{
                 font-size: 16px;
                 color: #1a1a40;
                 margin-bottom: 24px;
+                line-height: 1.6;
             }
         }
         .profile{
@@ -235,13 +240,14 @@ article{
                     inset: 0;
                     width: 100%;
                     padding:
-                    clamp(72px, 10vw, 95px) clamp(20px, 5vw, 40px);
+                    clamp(32px, 10vw, 95px) clamp(20px, 5vw, 40px);
                     p{
                         font-family: style.$main-font;
                         font-size: 16px;
                         color: #1a1a40;
-                        margin-bottom: 24px;
+                        margin-bottom: 16px;
                         line-height: 1.6;
+                        letter-spacing: 0.05em;
                         &:last-child {
                             margin-bottom: 0;
                         }
@@ -316,7 +322,7 @@ article{
         h3{
             font-family: style.$ttl-font;
             font-size: 24px;
-            font-weight: normal;
+            font-weight: bold;
             color: style.$cream-color;
         }
         p{
@@ -325,6 +331,7 @@ article{
             color: style.$txt-color;
             font-weight: normal;
             line-height: 1.6;
+            letter-spacing: 0.05em;
             margin-bottom: 32px;
         }
     }
@@ -366,9 +373,6 @@ article{
         border-radius: 72px;
         width: min(1080px,90%);
         padding: 102px 72px 80px;
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        gap: 72px;
         .otherskill-content{
             h3{
                 font-family: style.$ttl-font;
@@ -382,7 +386,26 @@ article{
                 color: #1a1a40;
                 font-weight: normal;
                 line-height: 1.6;
+                letter-spacing: 0.05em;
                 margin-bottom: 32px;
+            }
+        }
+    }
+    .design-ttl{
+        background: url(../picture/skill-ttl.png)
+        center center / contain no-repeat;
+        h2{
+            color: #4b86a2;
+        }
+    }
+    .design-skill{
+        background-color: #4b86a2;
+        .design-skill-content{
+            h3{
+                color: style.$cream-color;
+            }
+            p{
+            color: style.$txt-color;
             }
         }
     }
@@ -475,9 +498,9 @@ footer{
                 }
             }
             p{
-                color: rgba(232, 235, 244, 0.32);
+                color: style.$txt-color;
                 font-family: style.$main-font;
-                font-size: 10px;
+                font-size: 12px;
                 writing-mode: vertical-rl;
                 padding-bottom: 26px;
                 position: absolute;
@@ -596,6 +619,17 @@ footer{
                 }
             }
         }
+    }
+    h6{
+        opacity: 1;
+        display: flex;
+        justify-content: end;
+        padding-right: 16px;
+        letter-spacing: 1.4px;
+        word-spacing: 4px;
+        font-size: 10px;
+        font-family: style.$main-font;
+        color: style.$cream-color;
     }
     .wave-center{
         margin-top: -3.3rem;

@@ -154,8 +154,13 @@ article .work .work-card .card p {
   font-family: "Inder", sans-serif;
   font-size: 16px;
   color: #E8EBF4;
-  line-height: 164%;
+  line-height: 1.6;
+  letter-spacing: 0.05em;
   padding: 6px 0 72px 4px;
+}
+
+h6 {
+  opacity: 0;
 }
 
 .wave-center {
@@ -186,7 +191,7 @@ article .work .work-card .card p {
 .profile-back .profile-box .profile-icon img {
   display: block;
   margin-inline: auto;
-  margin-top: -32px;
+  margin-top: -56px;
 }
 .profile-back .profile-box .profile-icon h3 {
   font-family: "Inder", sans-serif;
@@ -202,6 +207,7 @@ article .work .work-card .card p {
   font-size: 16px;
   color: #1a1a40;
   margin-bottom: 24px;
+  line-height: 1.6;
 }
 .profile-back .profile-box .profile {
   position: relative;
@@ -242,14 +248,15 @@ article .work .work-card .card p {
   position: absolute;
   inset: 0;
   width: 100%;
-  padding: clamp(72px, 10vw, 95px) clamp(20px, 5vw, 40px);
+  padding: clamp(32px, 10vw, 95px) clamp(20px, 5vw, 40px);
 }
 .profile-back .profile-box .profile .profile-txt-back .profile-txt p {
   font-family: "Inder", sans-serif;
   font-size: 16px;
   color: #1a1a40;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
   line-height: 1.6;
+  letter-spacing: 0.05em;
 }
 .profile-back .profile-box .profile .profile-txt-back .profile-txt p:last-child {
   margin-bottom: 0;
@@ -320,7 +327,7 @@ article .work .work-card .card p {
 .skill-box .skill h3 {
   font-family: "Onest", sans-serif;
   font-size: 24px;
-  font-weight: normal;
+  font-weight: bold;
   color: #fff4cc;
 }
 .skill-box .skill p {
@@ -329,6 +336,7 @@ article .work .work-card .card p {
   color: #E8EBF4;
   font-weight: normal;
   line-height: 1.6;
+  letter-spacing: 0.05em;
   margin-bottom: 32px;
 }
 
@@ -368,9 +376,6 @@ article .work .work-card .card p {
   border-radius: 72px;
   width: min(1080px, 90%);
   padding: 102px 72px 80px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 72px;
 }
 .otherskill-box .otherskill .otherskill-content h3 {
   font-family: "Onest", sans-serif;
@@ -384,7 +389,23 @@ article .work .work-card .card p {
   color: #1a1a40;
   font-weight: normal;
   line-height: 1.6;
+  letter-spacing: 0.05em;
   margin-bottom: 32px;
+}
+.otherskill-box .design-ttl {
+  background: url(../picture/skill-ttl.png) center center/contain no-repeat;
+}
+.otherskill-box .design-ttl h2 {
+  color: #4b86a2;
+}
+.otherskill-box .design-skill {
+  background-color: #4b86a2;
+}
+.otherskill-box .design-skill .design-skill-content h3 {
+  color: #fff4cc;
+}
+.otherskill-box .design-skill .design-skill-content p {
+  color: #E8EBF4;
 }
 
 @media (max-width: 1024px) {
@@ -474,9 +495,9 @@ footer p {
     visibility: visible;
   }
   .hamburger .hamburger-logo p {
-    color: rgba(232, 235, 244, 0.32);
+    color: #E8EBF4;
     font-family: "Inder", sans-serif;
-    font-size: 10px;
+    font-size: 12px;
     writing-mode: vertical-rl;
     padding-bottom: 26px;
     position: absolute;
@@ -591,6 +612,17 @@ footer p {
   }
   article .work .work-card .card-last {
     margin-right: 56px;
+  }
+  h6 {
+    opacity: 1;
+    display: flex;
+    justify-content: end;
+    padding-right: 16px;
+    letter-spacing: 1.4px;
+    word-spacing: 4px;
+    font-size: 10px;
+    font-family: "Inder", sans-serif;
+    color: #fff4cc;
   }
   .wave-center {
     margin-top: -3.3rem;
